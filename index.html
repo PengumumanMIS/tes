@@ -1957,7 +1957,7 @@ function openClassModal(classId = '') {
       <div><label class="block text-xs font-semibold mb-1">Nama Kelas *</label><input id="mdlClsName" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs" value="${escapeHtml(c.ClassName || '')}" placeholder="VII-A"></div>
       <div><label class="block text-xs font-semibold mb-1">Tingkat *</label>
         <select id="mdlClsLevel" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs bg-white">
-          ${['7','8','9','10','11','12'].map(l => `<option value="${l}" ${String(c.GradeLevel) === l ? 'selected' : ''}>Kelas ${l}</option>`).join('')}
+          ${['1','2','3','4','5','6'].map(l => `<option value="${l}" ${String(c.GradeLevel) === l ? 'selected' : ''}>Kelas ${l}</option>`).join('')}
         </select>
       </div>
     </div>`,
